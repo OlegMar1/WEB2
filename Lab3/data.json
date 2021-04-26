@@ -1,0 +1,6 @@
+[
+  {"username":"Oleh","password":"123","age":20, "status":"free"},
+  {"username":"Andriy","password":"124","age":38, "status":"test"},
+  {"username":"Petro","password":"125","age":41, "status":"free"},
+  {"username":"Victor","password":"125","age":51, "status":"test"}
+]
