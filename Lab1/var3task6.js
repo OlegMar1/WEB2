@@ -2,9 +2,6 @@
 
 let array = [9,8,6,3,4,5,1,7]
 
-
-
-
 function BSort(array) {
   for (let i = 0, endI = array.length - 1; i < endI; i++) {
       let wasSwap = false;

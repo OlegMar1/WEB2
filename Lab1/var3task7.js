@@ -92,7 +92,6 @@ function searchById(array,id) {
   }
 }
 
-
 let arrayCustomer = [];
 let arrayPerformer = [];
 let arrayProject = [];
