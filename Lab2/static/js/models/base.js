@@ -55,52 +55,7 @@ class BaseModel {
     const entry = this.GetEmpty()
 
     console.log(row);
-  //  if(this.collectionName === 'project_in_progress'){
 
-  //     let all = JSON.parse(localStorage.getItem('customer'))
-  //     console.log(all);
-  //     let allCag = JSON.parse(localStorage.getItem('projects'))
-  //     console.log(allCag);
-
-  //     let starALL = allCag.filter((value, index) =>{
-  //       return value.name == row.project
-  //     })
-
-  //     let star = all.filter((value, index) =>{
-  //       return value.number == row['customer']
-  //     })
-  //     if(star.length===0 || starALL.length === 0) {
-  //       alert("customer or project not found!")
-  //     } else {
-
-  //       for (const key in row) {
-  //         if (key!=='id'&& row[key] ==='' ) {
-  //           document.getElementById('error-text').innerHTML = "Empty object is invalid"
-  //           return;
-  //         }
-  //       }
-  //       document.getElementById('error-text').innerText = ""
-
-  //       for (const key in row) {
-  //         if (entry.hasOwnProperty(key) &&
-  //             entry.key !== 'id') {
-  //           entry[key] = row[key]
-  //         }
-  //       }
-
-  //       entry.id = this.getNextId(collection)
-
-  //       collection.push(entry)
-
-  //       this.Commit(collection)
-
-  //       const event = new CustomEvent(`${this.collectionName}ListDataChanged`, { detail: collection })
-  //       document.dispatchEvent(event)
-  //     }
-
-
-  //   }
-    // else{
       for (const key in row) {
         if (key!=='id'&& row[key] ==='' ) {
           document.getElementById('error-text').innerHTML = "Empty object is invalid"
@@ -123,8 +78,6 @@ class BaseModel {
 
       const event = new CustomEvent(`${this.collectionName}ListDataChanged`, { detail: collection })
       document.dispatchEvent(event)
-  //  }
-
 
   }
 
@@ -192,4 +145,3 @@ class BaseModel {
     document.dispatchEvent(event)
   }
 }
-
