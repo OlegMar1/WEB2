@@ -62,11 +62,6 @@ function createTable(element,users) {
         }
 
 function updateUser(id){
-   // var obj={id:id};
-   // $.post('/updateuser',obj,function(data){
-   // console.log(data);
-   //         getUsers();
-   // })
    $.get('/getusers',function(data){
      let user=data.find(x=>x._id===id);
      let {username, userage}=user;
@@ -76,17 +71,6 @@ function updateUser(id){
        document.getElementById('formSubmit').value='Update';
      }
      x=user;
-     // $('.add').click(function(){
-     //   user.username=$('.name').val();
-     //   user.userage=$('.age').val();
-     //   console.log(user);
-     //   $.post('/updateuser',user,function(){
-     //     getUsers();
-     //   })
-     //   $('.name').val("");
-     //   $('.age').val("");
-     //   //document.getElementById('formSubmit').value='Add';
-     // });
    })
    //alert("Update1");
 }
